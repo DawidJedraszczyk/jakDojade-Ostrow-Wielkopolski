@@ -1,0 +1,22 @@
+{"buses" : [
+    {"busName":"busNr1", "busNumber":1, "numberOfStops":45},
+    {"busName":"busNr2", "busNumber":2, "numberOfStops":26},
+    {"busName":"busNr4", "busNumber":4, "numberOfStops":22},
+    {"busName":"busNr5", "busNumber":5, "numberOfStops":36},
+    {"busName":"busNr6", "busNumber":6, "numberOfStops":36},
+    {"busName":"busNr7", "busNumber":7, "numberOfStops":38},
+    {"busName":"busNr8", "busNumber":8, "numberOfStops":23},
+    {"busName":"busNr9", "busNumber":9, "numberOfStops":25},
+    {"busName":"busNr10", "busNumber":10, "numberOfStops":29},
+    {"busName":"busNr11", "busNumber":11, "numberOfStops":36},
+    {"busName":"busNr12", "busNumber":12, "numberOfStops":31},
+    {"busName":"busNr13", "busNumber":13, "numberOfStops":28},
+    {"busName":"busNr14", "busNumber":14, "numberOfStops":39},
+    {"busName":"busNr15", "busNumber":15, "numberOfStops":37},
+    {"busName":"busNr16", "busNumber":16, "numberOfStops":34},
+    {"busName":"busNr18", "busNumber":18, "numberOfStops":43},
+    {"busName":"busNr20", "busNumber":20, "numberOfStops":42},
+    {"busName":"busNr21", "busNumber":21, "numberOfStops":22},
+    {"busName":"busNr22", "busNumber":22, "numberOfStops":42},
+    {"busName":"busNr25", "busNumber":25, "numberOfStops":29}
+]}

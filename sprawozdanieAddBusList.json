@@ -1,0 +1,7 @@
+{"buses" : [
+    {"busName":"busNr1", "busNumber":1, "numberOfStops":4},
+    {"busName":"busNr2", "busNumber":2, "numberOfStops":4},
+    {"busName":"busNr4", "busNumber":4, "numberOfStops":4},
+    {"busName":"busNr5", "busNumber":5, "numberOfStops":4},
+    {"busName":"busNr6", "busNumber":6, "numberOfStops":4}
+  ]}

@@ -1,0 +1,7 @@
+{"stopsList" : [
+  {"busNr1": ["Poznańska Lotnicza", "Krotoszyńska ZAP", "Centrum przesiadkowe", "Raszkowska kościół"]},
+  {"busNr2": ["Kaliska Bank","Gimnazjalna", "Plac Bankowy", "Centrum przesiadkowe"]},
+  {"busNr4": ["Centrum przesiadkowe", "Raszkowska kościół", "Wolności","Partyzancka"]},
+  {"busNr5": ["Gimnazjalna", "Plac Bankowy", "Sienkiewicza", "Wojska Polskiego"]},
+  {"busNr6": ["Lotnicza Poznańska","Poznańska Lotnicza", "Wolności", "Krotoszyńska ZAP"]}
+]}
