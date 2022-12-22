@@ -102,8 +102,8 @@ def algorithm(firstStation, lastStation, hour, minute, maxTime, graph):
                 if minSecondStationMinuteDeparture > 59:
                     minSecondStationMinuteDeparture -= 60
                     minSecondStationHourDeparture += 1
-                if secondOption != busName:
-                    for secondBus in secondOption:
+                for secondBus in secondOption:
+                    if secondBus != busName:
                         secondBusDirection = checkDirection(secondBus, secondStopName, lastStation)
                         secondStationHourDeparture, secondStationMinuteDeparture = checkDepartureHours(secondBus, secondStopName, secondBusDirection, minSecondStationHourDeparture, minSecondStationMinuteDeparture)
                         timeBetween = graph.get_time_between_stops_algorithm(secondStopName, lastStation, secondBus, secondBusDirection)
