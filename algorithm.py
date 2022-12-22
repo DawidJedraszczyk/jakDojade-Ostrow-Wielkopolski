@@ -124,18 +124,19 @@ def algorithm(firstStation, lastStation, hour, minute, maxTime, graph):
                             minSecondStationMinuteDeparture -= 60
                             minSecondStationHourDeparture += 1
                         for secondBus in secondOption:
-                            secondBusDirection = checkDirection(secondBus, secondStopName, lastStation)
-                            secondStationHourDeparture, secondStationMinuteDeparture = checkDepartureHours(secondBus, secondStopName, secondBusDirection, minSecondStationHourDeparture, minSecondStationMinuteDeparture)
+                            if secondBus != busName:
+                                secondBusDirection = checkDirection(secondBus, secondStopName, lastStation)
+                                secondStationHourDeparture, secondStationMinuteDeparture = checkDepartureHours(secondBus, secondStopName, secondBusDirection, minSecondStationHourDeparture, minSecondStationMinuteDeparture)
 
-                            lastStationHourArrival, lastStationMinuteArrival = checkDepartureHours(secondBus, lastStation, secondBusDirection, secondStationHourDeparture, secondStationMinuteDeparture)
+                                lastStationHourArrival, lastStationMinuteArrival = checkDepartureHours(secondBus, lastStation, secondBusDirection, secondStationHourDeparture, secondStationMinuteDeparture)
 
-                            travelTimeHour, travelTimeMinute = sumUpTravelTime(lastStationHourArrival, lastStationMinuteArrival, firstStationHour, firstStationMinute)
+                                travelTimeHour, travelTimeMinute = sumUpTravelTime(lastStationHourArrival, lastStationMinuteArrival, firstStationHour, firstStationMinute)
 
-                            if ((travelTimeHour <= theFastestSecondOption[3][0] and travelTimeMinute < theFastestSecondOption[3][1]) or (travelTimeHour < theFastestSecondOption[3][0])):
-                                theFastestSecondOption = [busName, secondBus, secondStopName, [travelTimeHour, travelTimeMinute], [firstStationHour, firstStationMinute], [secondStationHourArrival, secondStationMinuteArrival], [secondStationHourDeparture, secondStationMinuteDeparture], [lastStationHourArrival, lastStationMinuteArrival]]
+                                if ((travelTimeHour <= theFastestSecondOption[3][0] and travelTimeMinute < theFastestSecondOption[3][1]) or (travelTimeHour < theFastestSecondOption[3][0])):
+                                    theFastestSecondOption = [busName, secondBus, secondStopName, [travelTimeHour, travelTimeMinute], [firstStationHour, firstStationMinute], [secondStationHourArrival, secondStationMinuteArrival], [secondStationHourDeparture, secondStationMinuteDeparture], [lastStationHourArrival, lastStationMinuteArrival]]
 
-                            if ((lastStationHourArrival <= firstOnPlaceSecondOption[7][0] and lastStationMinuteArrival < firstOnPlaceSecondOption[7][1]) or (lastStationHourArrival < firstOnPlaceSecondOption[7][0])):
-                                firstOnPlaceSecondOption = [busName, secondBus, secondStopName, [travelTimeHour, travelTimeMinute], [firstStationHour, firstStationMinute], [secondStationHourArrival, secondStationMinuteArrival],[secondStationHourDeparture, secondStationMinuteDeparture], [lastStationHourArrival, lastStationMinuteArrival]]
+                                if ((lastStationHourArrival <= firstOnPlaceSecondOption[7][0] and lastStationMinuteArrival < firstOnPlaceSecondOption[7][1]) or (lastStationHourArrival < firstOnPlaceSecondOption[7][0])):
+                                    firstOnPlaceSecondOption = [busName, secondBus, secondStopName, [travelTimeHour, travelTimeMinute], [firstStationHour, firstStationMinute], [secondStationHourArrival, secondStationMinuteArrival],[secondStationHourDeparture, secondStationMinuteDeparture], [lastStationHourArrival, lastStationMinuteArrival]]
     if optionCounter == 2:
         print("jedziesz z 1 przesiadką \n")
         print("najszybciej na miejscu będzie: ")
