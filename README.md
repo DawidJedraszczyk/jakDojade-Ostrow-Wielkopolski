@@ -14,5 +14,3 @@ After that It create array of buses from first stop and last stop, if on the arr
 If there is more than one option it compare them, and give you only the best two (first is the bus that is first on the last stop and the second one option is the bus that is faster than the others, so the trip is the shortest).
 
 If there is no option to drive directly, my algorithm is looking for every next stop from first one. When you are already on new stop, it will again create array of buses, and compare it. After that the code is similar as in first option.
-
-Much more is here: http://pw20we.cs.put.poznan.pl/doku.php?id=ok22:s148293:s148293 (only in polish)
